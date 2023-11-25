@@ -3,6 +3,10 @@ combat atari-styled game made in JS
 
 todo:
 
+[+] add comments describing what happens
+
+
+
 [+] improve bullet collision
 
 
