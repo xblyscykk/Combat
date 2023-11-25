@@ -1,0 +1,43 @@
+body{
+    text-align:center;
+    background-color:black;
+}
+
+@font-face {
+    font-family: "Trickster";
+    src:
+      local("Trickster"),
+      url("start.ttf") format("truetype"),
+}
+
+#board{
+    border-color:white;
+    border-style: solid;
+    background-color:black;
+}
+
+#expander {
+	display: none;
+}
+
+.spoiler .expander:before {
+    color:white;
+  content: '[show controls]'
+}
+
+.spoiler #expand {
+  display: none;
+}
+
+.spoiler #expand:checked + .expander:before {
+color:white;
+  content: '[hide]';
+}
+
+.spoiler #expand:checked ~ .spoiler-content {
+	display: block;
+}
+
+.spoiler .spoiler-content {
+	display: none;
+}
